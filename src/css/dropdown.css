@@ -1,0 +1,20 @@
+/* Add this style to your CSS file */
+.input100.dropdown {
+    border: none;
+    outline: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    padding-right: 20px; /* Adjust the padding based on your design */
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-size: 20px; /* Adjust the size of the background icon */
+  }
+  
+  .custom-arrow {
+    position: absolute;
+    top: 50%;
+    right: 10px; /* Adjust the right position based on your design */
+    transform: translateY(-50%);
+    pointer-events: none; /* Ensure the arrow doesn't interfere with dropdown interaction */
+  }
+  
