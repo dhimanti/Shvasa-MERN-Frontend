@@ -16,8 +16,10 @@ const CreateAgent = () => {
     try {
       console.log("Sending support ticket:", newSupportAgent);
   
-      const response = await fetch('http://localhost:5000/api/support-agents', {
-        method: 'POST',
+      // const response = await fetch('http://localhost:5000/api/support-agents', {
+      // changing for vercel deployment
+      const response = await fetch('https://mern-back-end-ebon.vercel.app/api/support-agents', {
+          method: 'POST',
         headers: {
           'Content-Type': 'application/json',
         },
