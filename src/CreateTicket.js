@@ -17,7 +17,9 @@ const CreateTicket = () => {
     try {
       console.log("Sending support ticket:", newTicket);
   
-      const response = await fetch('http://localhost:5000/api/support-tickets', {
+      // const response = await fetch('http://localhost:5000/api/support-tickets', {
+      // changing for vercel deployment
+      const response = await fetch('https://mern-back-end-ebon.vercel.app/api/support-tickets', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
